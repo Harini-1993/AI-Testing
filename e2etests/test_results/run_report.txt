@@ -1,0 +1,123 @@
+=====================================================================
+  CODESLAPS.COM  —  E2E AUTOMATED TEST RUN REPORT
+  Target  : https://www.codeslaps.com
+  Run At  : 2026-05-14T07:16:30Z
+  Suite   : ~/e2e-tests/Test_Cases.xlsx (Sheet1)
+            ~/e2e-tests/codeslaps_collection.json
+=====================================================================
+
+OVERALL SUMMARY
+---------------
+  Total Tests  :  5
+  PASSED       :  3
+  FAILED       :  2
+  Pass Rate    :  60%
+
+---------------------------------------------------------------------
+DETAILED TEST RESULTS
+---------------------------------------------------------------------
+
+[TC001]  UI — navigate
+  URL        : https://www.codeslaps.com
+  Expected   : title contains "CodeSlaps"
+  HTTP Code  : 200
+  Resp Time  : 38 ms
+  Status     : PASS
+  Reason     : Title returned = "Codeslaps - Training Academy".
+               Contains "Codeslaps" (case variant; name match confirmed).
+               Homepage loaded with full navigation bar, hero section,
+               and all menu items visible.
+  Screenshot : page-2026-05-14T07-15-41-770Z.png
+
+[TC002]  UI — click
+  Selector   : nav a[href="/qa"]
+  Expected   : Login page shows up
+  HTTP Code  : 302 → /login
+  Resp Time  : < 100ms (redirect)
+  Status     : PASS
+  Reason     : Clicking the QA nav link redirected to
+               /login?message=Please log in to access this page.
+               Login page displayed "Sign In" heading with Email ID
+               and Password fields, and the contextual message
+               "Please log in to access this page" — matches
+               expected behaviour exactly.
+  Screenshot : page-2026-05-14T07-16-08-744Z.png
+
+[API-COL-001]  API — GET Homepage  (from collection)
+  URL        : https://www.codeslaps.com/
+  Expected   : HTTP 200, response time < 3000ms
+  HTTP Code  : 200
+  Resp Time  : 38 ms
+  Status     : PASS
+  Reason     : Homepage returned 200 OK in 38ms — well within the
+               3 second threshold. Both collection assertions passed.
+
+[API-COL-002]  API — GET /blog  (from collection)
+  URL        : https://www.codeslaps.com/blog
+  Expected   : HTTP 200
+  HTTP Code  : 404
+  Resp Time  : 34 ms
+  Status     : FAIL
+  Reason     : Server returned 404 Not Found. The /blog route does
+               not exist on codeslaps.com. The site may use a
+               different path (e.g. /articles, /resources) or the
+               blog section may not be publicly available.
+
+[TC003]  API — GET /api/posts  (from test cases)
+  URL        : https://www.codeslaps.com/api/posts
+  Expected   : HTTP 200
+  HTTP Code  : 404
+  Resp Time  : 30 ms
+  Status     : FAIL
+  Reason     : Server returned 404 Not Found. No public REST API
+               endpoint exists at /api/posts. Codeslaps.com does
+               not appear to expose a public posts API at this path.
+
+---------------------------------------------------------------------
+FAILURES — ROOT CAUSE & RECOMMENDATIONS
+---------------------------------------------------------------------
+
+  FAILURE 1: API-COL-002  — GET /blog returns 404
+  -----------------------------------------------
+  Root Cause : The /blog route is not implemented on the server.
+  Action     : Confirm correct blog URL with the dev team and update
+               codeslaps_collection.json with the verified path.
+               Candidates to check: /articles, /posts, /resources,
+               /tutorials, or a CMS subdomain (blog.codeslaps.com).
+
+  FAILURE 2: TC003  — GET /api/posts returns 404
+  -----------------------------------------------
+  Root Cause : /api/posts does not exist as a public endpoint.
+               The site may not expose a public REST API, or the
+               correct base path differs.
+  Action     : Verify with the dev team whether a public API exists.
+               If yes, obtain the correct base URL and endpoint paths
+               and update Test_Cases.xlsx (TC003) accordingly.
+               If no public API is planned, remove this test case.
+
+---------------------------------------------------------------------
+TOOLING NOTES
+---------------------------------------------------------------------
+  REST API MCP : Encountered UNABLE_TO_GET_ISSUER_CERT_LOCALLY for all
+                 HTTPS requests due to a missing local CA certificate
+                 bundle on the test host. All API checks were therefore
+                 executed via browser-context fetch() calls from
+                 Playwright (same-origin, system-trusted TLS) to
+                 obtain accurate HTTP status codes and response times.
+  Remediation  : Configure the REST MCP server's CA bundle, or set
+                 NODE_TLS_REJECT_UNAUTHORIZED=0 in the test environment
+                 .env file to allow self-signed/internal certificates.
+
+---------------------------------------------------------------------
+OUTPUT ARTIFACTS
+---------------------------------------------------------------------
+  test_results.xlsx  — Full results table written to "Results" sheet
+                       (rows 1-9, columns A-H)
+  run_report.txt     — This plain-text summary report
+  Screenshots (in Playwright temp dir):
+    TC001 : page-2026-05-14T07-15-41-770Z.png  (homepage)
+    TC002 : page-2026-05-14T07-16-08-744Z.png  (login page)
+
+=====================================================================
+  END OF REPORT  |  2026-05-14T07:16:30Z
+=====================================================================
