@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/mcp-server-playwright"]
+    },
+    "excel": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/mcp-server-excel"]
+    }
+  }
+}
