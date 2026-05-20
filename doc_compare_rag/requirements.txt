@@ -1,0 +1,20 @@
+python-docx
+mammoth
+pdfplumber
+fpdf2
+PyMuPDF
+pytesseract
+pdf2image
+numpy
+sentence-transformers
+faiss-cpu
+chromadb
+langchain
+langchain-community
+openai
+anthropic
+streamlit
+python-dotenv
+pytest
+
+# difflib is included in the Python standard library.
