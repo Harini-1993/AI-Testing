@@ -1,0 +1,51 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+     "excel": {
+      "command": "cmd",
+      "args": ["/C", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "@negokaz/excel-mcp-server"],
+      "env": {
+        "EXCEL_MCP_PAGING_CELLS_LIMIT": "4000"
+      }
+    },
+    "rest-api": {
+  "command": "node",
+  "args": [
+    "C:\\Users\\Lakshmipathih\\AppData\\Roaming\\npm\\node_modules\\dkmaker-mcp-rest-api\\build\\index.js"
+  ],
+  "env": {
+    "REST_BASE_URL": "https://www.codeslaps.com"
+  }
+},
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+       "C:\\Users\\Lakshmipathih\\e2etests",
+    "C:\\Users\\Lakshmipathih\\e2etests\\test_results"
+      ]
+    }
+  },
+  "preferences": {
+    "coworkWebSearchEnabled": true,
+    "remoteToolsDeviceName": "els-vzr4s8cyhzj",
+    "coworkScheduledTasksEnabled": true,
+    "ccdScheduledTasksEnabled": true,
+    "epitaxyPrefs": {
+      "starred-local-code-sessions": [],
+      "starred-cowork-spaces": [],
+      "starred-session-groups": [],
+      "dframe-local-slice": {
+        "pinnedOrder": [],
+        "customGroupAssignments": {},
+        "customGroupOrder": {}
+      }
+    }
+  }
+}
