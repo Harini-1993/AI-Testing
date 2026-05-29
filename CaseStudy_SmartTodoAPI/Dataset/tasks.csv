@@ -1,0 +1,201 @@
+Task,Priority
+Fix production bug,High
+Server is down immediately,High
+Critical security vulnerability found,High
+Database crash in production,High
+Payment gateway not working,High
+Customer data breach detected,High
+API returning 500 errors,High
+Urgent client escalation,High
+Fix login failure for all users,High
+Hotfix needed for billing error,High
+Production deployment failed,High
+SLA breach imminent,High
+Emergency patch required,High
+System outage right now,High
+Fix authentication bug urgently,High
+Resolve critical memory leak,High
+Urgent bug in checkout flow,High
+Immediate fix needed for crash,High
+Fix data loss issue now,High
+Resolve urgent performance crash,High
+High priority ticket from CEO,High
+Fix broken CI/CD pipeline,High
+Deploy hotfix to live servers,High
+Security patch must go out today,High
+Fix broken payments immediately,High
+Deadline project delivery today,High
+Fix urgent null pointer exception,High
+Crash on mobile app launch,High
+Fix regulatory compliance issue,High
+Address critical XSS vulnerability,High
+Resolve production timeout errors,High
+Fix broken email notifications system,High
+Urgent rollback required,High
+Immediate database migration fix,High
+Fix high CPU usage on production,High
+Tackle blocking issue for release,High
+Patch critical dependency vulnerability,High
+Fix broken API authentication,High
+Urgent: user accounts locked out,High
+Fix breaking change in production,High
+Prepare quarterly report,Medium
+Schedule weekly team meeting,Medium
+Update project documentation,Medium
+Code review for pull request,Medium
+Review sprint backlog,Medium
+Write unit tests for new feature,Medium
+Refactor authentication module,Medium
+Update dependencies to latest version,Medium
+Improve API response caching,Medium
+Create onboarding guide for new hire,Medium
+Review and respond to support tickets,Medium
+Fix minor UI alignment issues,Medium
+Implement feature flag for beta test,Medium
+Update user profile page design,Medium
+Write integration tests,Medium
+Optimize database queries,Medium
+Review analytics dashboard metrics,Medium
+Plan next quarter roadmap,Medium
+Add logging to payment service,Medium
+Update API documentation,Medium
+Conduct performance review,Medium
+Fix broken image upload on profile,Medium
+Set up staging environment,Medium
+Review security audit findings,Medium
+Write monthly progress report,Medium
+Implement dark mode toggle,Medium
+Add pagination to user list,Medium
+Update error handling in API,Medium
+Schedule client demo call,Medium
+Fix intermittent test failures,Medium
+Improve search functionality,Medium
+Add export to CSV feature,Medium
+Code review backend PR,Medium
+Update privacy policy page,Medium
+Upgrade Node.js version,Medium
+Fix broken redirect after login,Medium
+Write release notes for v2.0,Medium
+Improve mobile responsiveness,Medium
+Refactor legacy payment code,Medium
+Set up monitoring alerts,Medium
+Update internal wiki pages,Medium
+Add rate limiting to API,Medium
+Review pull request from teammate,Medium
+Fix broken social login button,Medium
+Implement email template redesign,Medium
+Update changelog for release,Medium
+Fix bug in admin dashboard,Medium
+Plan team offsite event,Medium
+Improve test coverage to 80%,Medium
+Update Swagger API documentation,Medium
+Fix broken navigation menu on mobile,Medium
+Set up automated backups,Medium
+Review budget for next quarter,Medium
+Read design newsletter,Low
+Watch tutorial on new framework,Low
+Browse industry articles,Low
+Update personal development plan,Low
+Read book on system design,Low
+Watch conference talk recording,Low
+Explore new JavaScript library,Low
+Update resume with recent projects,Low
+Read team retrospective notes,Low
+Browse open source repositories,Low
+Watch webinar on cloud computing,Low
+Update LinkedIn profile,Low
+Read latest tech blog posts,Low
+Explore new CSS features,Low
+Watch YouTube tutorial on Docker,Low
+Update personal GitHub profile,Low
+Read newsletter about AI trends,Low
+Browse UX design inspiration,Low
+Watch recorded team meeting,Low
+Explore GraphQL documentation,Low
+Update Slack status,Low
+Read Hacker News articles,Low
+Browse product roadmap ideas,Low
+Watch intro to Kubernetes,Low
+Update personal notes in Notion,Low
+Read book summary on productivity,Low
+Explore data visualization tools,Low
+Watch talk on clean code,Low
+Browse marketplace for plugins,Low
+Update bookmarks folder,Low
+Read weekly engineering digest,Low
+Explore new IDE extensions,Low
+Watch frontend trends video,Low
+Update avatar photo in profile,Low
+Read article on microservices,Low
+Browse GitHub trending repos,Low
+Watch recording of design review,Low
+Update desktop wallpaper,Low
+Read blog on test automation,Low
+Explore open source contributions,Low
+Organize downloads folder,Low
+Watch tutorial on machine learning basics,Low
+Update notification preferences,Low
+Read article on agile methodology,Low
+Browse new font collections,Low
+Watch DevOps introduction video,Low
+Explore color palette tools,Low
+Read Python best practices guide,Low
+Update meeting notes from last week,Low
+Browse new productivity apps,Low
+Read team newsletter,Low
+Clean up old feature branches,Low
+Archive completed project files,Low
+Review saved articles in Pocket,Low
+Explore new terminal themes,Low
+Watch intro to TypeScript,Low
+Read monthly engineering blog,Low
+Update dependencies in side project,Low
+Browse new icon packs,Low
+Watch talk on REST vs GraphQL,Low
+Organize local development folder,Low
+Review saved code snippets,Low
+Watch introduction to Redis,Low
+Browse wireframe templates,Low
+Read release notes for Python 3.12,Low
+Update development environment setup,Low
+Watch conference keynote recording,Low
+Browse design system examples,Low
+Organize Google Drive folders,Low
+Read article on code review best practices,Low
+Watch intro to serverless functions,Low
+Update README for personal project,Low
+Browse stock photo libraries,Low
+Watch walkthrough of new VSCode features,Low
+Read blog about remote work tips,Low
+Organize Slack channels,Low
+Watch Docker Compose tutorial,Low
+Browse new UI component libraries,Low
+Read summary of company all-hands,Low
+Update personal task list in Trello,Low
+Watch tutorial on async/await in JS,Low
+Read article on database indexing,Low
+Browse new podcast recommendations,Low
+Watch intro to Terraform,Low
+Organize old email inbox,Low
+Read changelog for latest React version,Low
+Browse free certificate courses online,Low
+Watch intro to GitHub Actions,Low
+Update mobile app on phone,Low
+Read article on API design patterns,Low
+Browse new color schemes for portfolio,Low
+Watch talk on software architecture,Low
+Organize test fixtures folder,Low
+Read guide on writing better commit messages,Low
+Watch intro to WebSockets,Low
+Browse inspiration for side project landing page,Low
+Read tutorial on Pandas library,Low
+Update old comments in codebase,Low
+Watch video on soft skills for developers,Low
+Organize local screenshots folder,Low
+Read article on observability,Low
+Browse design feedback from last sprint,Low
+Watch intro to Elasticsearch,Low
+Update placeholder text in mockups,Low
+Read beginner guide to Rust,Low
+Browse alternative tools for project management,Low
+Watch recording of product demo,Low
